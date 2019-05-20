@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Hangman Game</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+    <h1>Welcome to Hangman!</h1>
+
+    <p>
+        Just, uh, without the hanging.  We don't need that in our lives! :P<br>
+        Anyway, for this game you have to guess the <b>6-letter word</b> I've coded in.  (And no, you can't check the console!  You lil' cheater :P)<br>
+        Type a letter in the square, and hit the Guess button to check and see if you're right!  You have exactly 10 guesses to figure this out.  Good luck!
+    </p>
+
+    <div id="ninja">
+      <textarea id="box_1" disabled>A</textarea>
+      <textarea id="box_2" disabled>L</textarea>
+      <textarea id="box_3" disabled>I</textarea>
+      <textarea id="box_4" disabled>E</textarea>
+      <textarea id="box_5" disabled>N</textarea>
+      <textarea id="box_6" disabled>S</textarea>
+    </div>
+    <br>
+    <textarea id="guessBox" maxlength="1"></textarea>
+
+    <button id="myGuess" onclick="userEntry()">Guess</button>
+
+    <h3>Incorrect letters:</h3>
+    <h4 id="wrong"></h4>
+</body>
+<script src="index.js"></script>
+</html>
